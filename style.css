@@ -1,20 +1,20 @@
 .col-md-4 {
-  height: 200px;
-  width: 200px;
+  height: 400px;
+  width: 400px;
   border: 2px solid black;
-  font-size: 5em;
+  font-size: 10em;
+  display: flex;
+  align-self: center;
+  justify-content: center;
 }
-
-.x {
-  background-color = blue;
-}
-
-
-.o {
-  background-color: black;
-}
-
 
 #whichPlayer {
   font-size: 3em;
+  height: 100px;
+  margin-top: 10px;
+}
+
+
+body {
+  background-color: powderblue;
 }

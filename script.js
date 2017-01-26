@@ -12,13 +12,14 @@ $(document).ready( function() {
   var seven = document.getElementById("7");
   var eight = document.getElementById("8");
   var nine = document.getElementById("9");
+  var arrayTiles = [one, two, three, four, five, six, seven, eight, nine];
+
   var reset = document.getElementById("reset");
   var whichPlayer = document.getElementById("whichPlayer");
-
-  var arrayTiles = [one, two, three, four, five, six, seven, eight, nine];
   var len = arrayTiles.length;
 
   function player() {
+    debugger;
     if (count === 0) {
        move = 'x';
        whichPlayer.innerHTML = 'Player 2';
@@ -44,8 +45,8 @@ $(document).ready( function() {
   reset.addEventListener("click", function() {
     for (var j = 0; j < len; j++) {
       arrayTiles[j].innerHTML = '';
-      whichPlayer.innerHTML = 'Player 1 begins...';
     }
+    whichPlayer.innerHTML = 'Player 1 begins...';
   });
 
 
